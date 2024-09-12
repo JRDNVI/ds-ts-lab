@@ -2,7 +2,16 @@ interface Friend {
     name: string;
     phone: string;
     age: number
-}
+};
+
+interface colleagueHistory {
+    name: string;
+    department: string;
+    contact: {
+        email: string;
+        extension: number
+    } 
+};
 
 const friend1: Friend = {
     name: "Paul Fleming",
@@ -20,7 +29,7 @@ const friend1: Friend = {
   console.log(friends[1]);
   
   //   -------------------
-  const colleague1 = {
+  const colleague1: colleagueHistory = {
     name: "Ralph Graham",
     department: "Engineering",
     contact: {
@@ -29,7 +38,7 @@ const friend1: Friend = {
     },
   };
   
-  const colleague2 = {
+  const colleague2: colleagueHistory = {
     name: "Patti Burke",
     department: "Finance",
     contact: {
@@ -38,7 +47,7 @@ const friend1: Friend = {
     },
   };
   
-  const colleague3 = {
+  const colleague3: colleagueHistory = {
     name: "Dean Sullivan",
     department: "HR",
     contact: {
