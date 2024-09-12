@@ -61,6 +61,7 @@ function sortColleagues(
   console.log(sortColleagues(colleagues.current, (a, b) => a.contact.extension - b.contact.extension));
   console.log(sortColleagues(colleagues.current, (a, b) => a.name.length - b.name.length));
 
+//
 
 function findFriends(
     friends: Friend[], 
