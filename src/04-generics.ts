@@ -10,7 +10,7 @@ console.log(findMatch<Colleague>(colleagues.current, (c) => c.department === 'Fi
 
 
 
-function sort<T>( data : T[], criteria: (a: T, b: T) => number ) : T[] {
+function sort<T>( data : T[], criteria: (a: T, b: T) => number ) : T[] | undefined {
   return [...data].sort(criteria)
 }
 // Sort friends by age

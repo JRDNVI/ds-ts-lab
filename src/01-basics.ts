@@ -44,7 +44,16 @@ const friend2 : Friend = {
     },
   };
 
+  const colleague4: Colleague = {
+    name: "Paul Fleming",
+    department: "Finance",
+    contact: {
+      email: "pburke@company.com",
+      extension: 132,
+    },
+  };
+
   export const colleagues: ColleagueHistory = {
-    current: [colleague1, colleague2, colleague3],
+    current: [colleague1, colleague2, colleague3, colleague4],
     former: [],
   };
