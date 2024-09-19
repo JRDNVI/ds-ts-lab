@@ -8,7 +8,7 @@ function older(f: Friend) {
 
 console.log(older(friends[0]))
 
-function allOlder(f: Friend[]) {
+function allOlder(f: Friend[]) : string[] {
     const str = []
     let i = 0
     while (f[i] != null) {
